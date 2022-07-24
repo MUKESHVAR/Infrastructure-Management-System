@@ -1,0 +1,29 @@
+<h3>Welcome <b>{{user.username}}</b> </h3>
+
+<br>
+<br>
+
+<table class="table table-bordered" class="table table-bordered"  style="background-color:#8fdad6;">
+  <thead style="background-color: #24252A;color:white;">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Customer Name</th>
+      <th scope="col">Customer Contact</th>
+      <th scope="col">Description</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each complaints}}
+        <tr>
+            <td>{{_id}}</td>          
+            <td>{{name}}</td>
+            <td>{{contact}}</td>
+            <td>{{desc}}</td>
+            <td><button>Resolve</button></td>
+        </tr>
+    {{/each}}
+    
+  </tbody>
+</table>
+
